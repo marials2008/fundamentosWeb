@@ -1,12 +1,12 @@
-/* Estilos de pagina de viajes  
+/* Estilos de pagina de viajes
 *{
     outline: solid rgb(255, 255, 255);
+    font-family: sans-serif ;
 }
 */
 body { /* Selección de body */
-    font-family:Arial, sans-serif ; /* Cambia tipografia */
-    margin: 0; /* Elimina todo el margen predefinido */
-    padding: 0; /* Elimina todo el relleno de los elementos */
+        margin: 0; /* Elimina todo el margen predefinido */
+        padding: 0; /* Elimina todo el relleno de los elementos */
     }
     /* Acá viene el estilo de una clase container */
     .container {
@@ -15,7 +15,7 @@ body { /* Selección de body */
     }
     /* Estilo de encabezado */
     header {
-        background-color: #333; /* Establece el color de fondo */
+        background-color: #0d4edb; /* Establece el color de fondo */
         color: #fff; /* Establece el color del texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
     }
@@ -54,7 +54,7 @@ body { /* Selección de body */
     }
     
     .btn{
-        background-color: #007bff; /* Color fondo boton */
+        background-color: #031529; /* Color fondo boton */
         color: #fff; /* Color del texto del boton */
         padding: 10px 20px; /* Relleno del boton */
         text-decoration: none; /* Quita decoración de enlace*/
@@ -87,7 +87,7 @@ body { /* Selección de body */
     }
     
     footer{
-        background-color: #333; /* Establece color fondo de footer */
+        background-color: #0e0c7e; /* Establece color fondo de footer */
         color: #fff; /* Establece color de texto de footer */
         text-align: center; /* Centra el texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
@@ -110,9 +110,9 @@ body { /* Selección de body */
         max-width: 500px; /* Establece el ancho máximo del elemento formulario */
         margin: 0 auto; /* Centra horizontalmente dentro del contenedor */
         padding:20px;
-        background-color: rgb(183, 194, 192);
+        background-color: rgb(95, 223, 122);
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Establece una sombra alrededor del formulario */
+        box-shadow: 0 0 10px rgb(17, 209, 209); /* Establece una sombra alrededor del formulario */
     }
     #contacto label{
         display: block; /* Etiquetas en bloques */
@@ -120,12 +120,12 @@ body { /* Selección de body */
         font-weight: bold; /* Establece fuente en negrita */
     }
     #contacto input, #contacto textarea{
-    width: 100%;
-    padding:10px;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    box-sizing: border-box; /* Incluye el padding y el borde del ancho dentro del elemento que lo contiene */
+        width: 100%;
+        padding:10px;
+        margin-bottom: 20px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        box-sizing: border-box; /* Incluye el padding y el borde del ancho dentro del elemento que lo contiene */
     }
     
     #contacto textarea{
