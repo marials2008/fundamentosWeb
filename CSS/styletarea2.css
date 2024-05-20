@@ -1,0 +1,33 @@
+*{margin:0;}
+#banner{
+    background-color: #000000;
+    margin: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-family: cursive;
+}
+h2{
+    margin-left: 20px;
+    padding: 1%;
+}
+h2 span{
+    color: aqua;
+}
+#projects{
+    background-color: #663399;
+    margin: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+#contact{
+    background-color: #9fc5f8;
+    margin: 20px;
+    color: #202257;
+    font-size: 30px;
+    text-align: right;
+    text-decoration:underline;
+}
+#contact h3{
+    margin: 15px;
+}
