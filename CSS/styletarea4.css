@@ -11,7 +11,6 @@ body {
     margin: 10%;
     color: #34a9aa; /* Color del texto del botón */
     padding: 12px 90px; /* Relleno del botón */
-    text-decoration: ; /* Quita decoración del enlace */
     font-weight: bold;
     border-radius: 50px;
     font-size: 20px;
@@ -24,7 +23,6 @@ body {
     background-color: #00d1b2;
     color: white; /* Color del texto del botón */
     padding: 10px 20px; /* Relleno del botón */
-    text-decoration: ; /* Quita decoración del enlace */
     font-weight: bold;
     border-radius: 50px;
     font-size: 35px;
