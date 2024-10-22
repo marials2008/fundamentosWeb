@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.nav {
+    justify-content: space-between;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    background-color: #333;
+}
+
+
+.nav-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    color: white;
+}
+
+
+.nav-links li a.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+
+}
+
+.nav-links li a:hover {
+    color:  #17a2b8; 
+}
+
+.btn {
+    background-color: #17a2b8;
+    font-size: 16px; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    align-items: center;
+
+}
+.btn:hover {
+    background-color: #2ab4eb; 
+}
+
+a{
+    
+    text-align: center;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: -20vh;
+    align-self: center;
+    margin: 5px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
+    height: 30vh;
+    border-color: rgba(0, 0, 0, 0.151);
+}
+
+.azul{
+    background-color: rgb(38, 170, 231);
+    padding: 8vh;
+    z-index: 0;
+}
+
+.info{
+    flex-direction: column;
+    z-index: 0;
+    margin: 5px;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+img{
+    margin: 5px;
+    margin-left: 1px;
+}
+
+.titulo{
+    display: flex;
+    padding: 0;
+}
+
+.map{
+    height: 3vh;
+    margin-top: 3vh;
+}
+
+.circle-user{
+    height: 15vh;
+    width: 15vh;
+    z-index: 1;
+    margin-top: -8vh;
+    margin-left: 30px;
+}
+
+.info-user{
+    font-size: 3vh;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+h2{
+    margin: 0;
+    margin-left: 30px;  
+    padding: 0;
+    font-size: 4vh;
+}
+
+#baseline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gear{
+    display: flex;
+    width: 2vh;
+    margin-left: -1px;
+}
+
+#container{
+    margin-top: 0;
+    margin-bottom: -90vh;
+    border: 5px;
+    outline: solid rgba(0, 0, 0, 0.445);
+    height: 50vh;
+    align-self: center;
+}
+
+h3{
+    
+    font-size: 3vh;
+}
+
+a{
+    
+    font-size: 3vh;
+}
