@@ -1,0 +1,160 @@
+/*header*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    background-color:  #333333;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    
+}
+
+.nav-title {
+    flex: 4;
+    color: #FFFF;
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items:center;
+}
+
+/*diseño*/
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-left:20px;
+}
+
+.active {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: bold;
+}
+
+.btn {
+    background-color: #5A96EA;
+    color:antiquewhite;
+    padding: 2px;
+    border-color: black;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.btn:hover {
+    background-color: #3b639b; 
+}
+/*header*/
+
+#container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap-reverse  ;
+    
+}
+
+/*tarjeta*/
+
+a {
+    color: #2b78e4;
+    text-decoration: none; 
+}
+
+/* imagenes */
+.icon {
+    height: 80px;
+    width: 80px;
+}
+
+.marcador {
+    height: 20px;
+    width: 20px;
+}
+
+.icono {
+    background-color: #FFFF;
+    border-radius: 90px;
+    padding: 2px;
+    height: 80px;
+    width: 80px;
+}
+
+.icono2 {
+    background-color: #FFFF;
+    border-radius: 90px;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+}
+
+/* bases */
+.flex{
+    display: flex;
+    height: 330px;
+    width: 60%;
+    box-shadow:0px 0px 10px black;
+    background-color: #FFFF;
+    margin: 20px;
+    flex: 2;
+}
+
+.targeta {
+    background-color: #17a2b8;
+    height: 20px;
+    width: 100%;
+    padding: 30px;
+}
+.texto {
+    height: 250px;
+    width: 100%;
+}
+
+/*conocidos-en linae-education*/
+#cuerpo-extras {
+    height: 330px;
+    flex: 1;
+    margin: 20px;
+    box-shadow:0px 0px 20px black;
+    
+}
+
+#cuerpo-extras2 {
+    height: 300px;
+    flex: 2;
+    margin: 20px;
+    box-shadow:0px 0px 10px black;
+}
+
+#cabe-extras{
+    height: 80px;
+    background-color: #333333;
+}
+
+#body-extras {
+    background-color: #ffff;
+    padding: 20px;
+}
+#body-extras2 {
+    background-color: #ffff;
+    padding: 20px;
+    font-size: 25px;
+}
+
+h3{
+    color: #ffff ;
+    padding: 20px;
+}
