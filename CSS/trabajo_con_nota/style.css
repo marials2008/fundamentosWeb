@@ -46,7 +46,7 @@ li {
 }
 
 .btn {
-    background-color: #5A96EA;
+    background-color: #10aaf1;
     color:antiquewhite;
     padding: 2px;
     border-color: black;
@@ -55,7 +55,7 @@ li {
 }
 
 .btn:hover {
-    background-color: #3b639b; 
+    background-color: #8049e6; 
 }
 /*header*/
 
@@ -70,7 +70,7 @@ li {
 /*tarjeta*/
 
 a {
-    color: #2b78e4;
+    color:#2b78e4;
     text-decoration: none; 
 }
 
@@ -86,7 +86,7 @@ a {
 }
 
 .icono {
-    background-color: #FFFF;
+    background-color: #ffffff;
     border-radius: 90px;
     padding: 2px;
     height: 80px;
@@ -94,7 +94,7 @@ a {
 }
 
 .icono2 {
-    background-color: #FFFF;
+    background-color: #ffffff;
     border-radius: 90px;
     padding: 2px;
     height: 40px;
@@ -104,10 +104,10 @@ a {
 /* bases */
 .flex{
     display: flex;
-    height: 330px;
-    width: 60%;
+    height: 270px;
+    width: 36%;
     box-shadow:0px 0px 10px black;
-    background-color: #FFFF;
+    background-color: #ffffff;
     margin: 20px;
 }
 
@@ -124,18 +124,17 @@ a {
 
 /*conocidos-en linae-education*/
 #cuerpo-extras {
-    height: 330px;
-    flex: 1;
+    height: 30vh;
     margin: 20px;
     box-shadow:0px 0px 20px black;
-    
+    margin-bottom: 28vh;
 }
 
 #cuerpo-extras2 {
-    height: 300px;
-    flex: 2;
-    margin: 20px;
-    box-shadow:0px 0px 10px black;
+    height: 250px; 
+    margin: 60px;
+    width: 90vh;
+    box-shadow:0px 0px 10px black; 
 }
 
 #cabe-extras{
@@ -144,16 +143,18 @@ a {
 }
 
 #body-extras {
-    background-color: #ffff;
+    background-color: #ffffff;
     padding: 20px;
+    justify-content: space-evenly;
 }
 #body-extras2 {
-    background-color: #ffff;
+    background-color: #ffffff;
     padding: 20px;
     font-size: 25px;
+
 }
 
 h3{
-    color: #ffff ;
+    color: #ffffff ;
     padding: 20px;
 }
