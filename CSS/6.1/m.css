@@ -70,6 +70,7 @@ body {
     padding: 0;
     align-items: center;
     justify-content: flex-end;
+    border-radius:;
 }
 
 .navbar-icons li {
@@ -78,7 +79,7 @@ body {
 
 .navbar-icons li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #757575;
     font-size: 14px;
 }
 
@@ -106,4 +107,37 @@ body {
 
 .navbar-icons li:last-child {
     margin-left: 15px;
+}
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8f1010;
+    color: white;
+    text-align: center;
+} 
+.location-bar {
+    background-color: #1c1b22; /* Color de fondo negro */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.location-bar span {
+    margin-right: 10px;
+    font-size: x-small;
+}
+
+.location-bar select {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
 }
