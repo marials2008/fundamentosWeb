@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charSet="utf-8"/>
+        <title>Spotify - Reproductor web: música para todos</title>
+        <meta property="og:site_name" content="Spotify"/>
+        <meta property="fb:app_id" content="174829003346"/>
+        <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"/>
+        <link rel="icon" sizes="16x16" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png"/>
+        <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+        <meta property="og:title" content="Spotify - Reproductor web: música para todos"/>
+        <meta property="og:description" content="Spotify es un servicio de música digital que te brinda acceso a millones de canciones."/>
+        <meta property="og:url" content="https://open.spotify.com/intl-es"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Spotify"/>
+        <meta property="og:image" content="https://open.spotifycdn.com/cdn/images/og-image.548bc4b7.png"/>
+        <meta name="description" content="Spotify es un servicio de música digital que te brinda acceso a millones de canciones."/>
+        <meta name="google" content="notranslate"/>
+        <meta name="al:android:app_name" content="Spotify"/>
+        <meta name="al:android:package" content="com.spotify.music"/>
+        <meta name="al:android:url" content="spotify://"/>
+        <meta name="al:ios:app_name" content="Spotify"/>
+        <meta name="al:ios:app_store_id" content="324684580"/>
+        <meta name="al:ios:url" content="spotify://"/>
+        <meta name="twitter:site" content="@spotify"/>
+        <meta name="twitter:title" content="Spotify - Reproductor web: música para todos"/>
+        <meta name="twitter:description" content="Spotify es un servicio de música digital que te brinda acceso a millones de canciones."/>
+        <meta name="twitter:image" content="https://open.spotifycdn.com/cdn/images/og-image.548bc4b7.png"/>
+        <meta name="twitter:card" content="summary"/>
+        <link rel="canonical" href="https://open.spotify.com/intl-es"/>
+        <link rel="alternate" href="https://open.spotify.com" hrefLang="x-default"/>
+        <link rel="alternate" href="https://open.spotify.com" hrefLang="en"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-id" hrefLang="id"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-de" hrefLang="de"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-pt" hrefLang="pt"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-ja" hrefLang="ja"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-fr" hrefLang="fr"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-ar" hrefLang="ar"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-es" hrefLang="es"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-tr" hrefLang="tr"/>
+        <link rel="alternate" href="https://open.spotify.com/intl-it" hrefLang="it"/>
+        <link rel="alternate" href="android-app://com.spotify.music/"/>
+        <link rel="manifest" href="https://open.spotifycdn.com/cdn/generated/manifest-web-player.1609946b.json"/>
+        <style data-styled="active"></style>
+        <link rel="stylesheet" href="https://open.spotifycdn.com/cdn/build/web-player/web-player.10d8439a.css"/>
+        <link rel="preconnect" href="https://apresolve.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://clienttoken.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://api-partner.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://spclient.wg.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://api.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://daily-mix.scdn.co" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://exp.wg.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://i.scdn.co" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://lineup-images.scdn.co" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://mosaic.scdn.co" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://open.spotifycdn.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://open-exp.spotifycdn.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://pixel-static.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://pixel.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://pl.scdn.co" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://gue1-dealer.spotify.com" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://gue1-spclient.spotify.com" crossorigin="anonymous"/>
+        <link rel="preload" href="https://open.spotifycdn.com/cdn/generated-locales/web-player/es-419.ff139beb.json" data-translations-url-for-locale="es-419" as="fetch" crossorigin="anonymous" type="application/json"/>
+        <style>
+            .grecaptcha-badge {
+                display: none !important;
+            }
+        </style>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39" async="" defer=""></script>
+        <link rel="search" type="application/opensearchdescription+xml" title="Spotify" href="https://open.spotifycdn.com/cdn/generated/opensearch.4cd8879e.xml"/>
+        <script defer="" src="https://www.googleoptimize.com/optimize.js?id=GTM-W53X654"></script>
+        <script defer="" src="https://open.spotifycdn.com/cdn/js/gtm.ea4c34bc.js"></script>
+        <script defer="" src="https://open.spotifycdn.com/cdn/js/retargeting-pixels.5ab9cdc0.js"></script>
+    </head>
+    <body class="encore-dark-theme encore-layout-themes">
+        <div class="body-drag-top"></div>
+        <script id="config" data-testid="config" type="application/json">
+            {
+                "appName": "web_player_prototype",
+                "market": "CL",
+                "locale": {
+                    "locale": "es-419",
+                    "rtl": false,
+                    "textDirection": "ltr"
+                },
+                "isPremium": false,
+                "correlationId": "96b34a3ce38dc2e5e042db4ef210e4e0",
+                "isAnonymous": true,
+                "gtmId": "GTM-PZHN3VD",
+                "optimizeId": "GTM-W53X654",
+                "pipResources": {
+                    "scripts": [
+                        "https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.4fe128c7.js",
+                        "https://open.spotifycdn.com/cdn/build/web-player/pip-mini-player.78289b5e.js"
+                    ],
+                    "styles": [
+                        "https://open.spotifycdn.com/cdn/build/web-player/pip-mini-player.db269d42.css"
+                    ]
+                },
+                "retargetingPixels": null,
+                "recaptchaWebPlayerFraudSiteKey": "6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39"
+            }</script>
+        <script id="session" data-testid="session" type="application/json">
+            {
+                "accessToken": "BQCYgEA6juUXor1wyt5e9-ScWVqL-ddJwjauP_wAavujqSMXfIRlQE-EaqYfuFHY89Y5a7nLbqVipR4RfAtwWj99lC2vWPsBTk4gGjUKI0h1_Y54dzk",
+                "accessTokenExpirationTimestampMs": 1732633570071,
+                "isAnonymous": true,
+                "clientId": "d8a5ed958d274c2e8ee717e6a4b0971d"
+            }</script>
+        <script id="features" type="application/json">
+            {
+                "enableShows": true,
+                "isTracingEnabled": false,
+                "upgradeButton": "control",
+                "mwp": false,
+                "isMWPErrorCodeEnabled": false,
+                "isMwpRadioEntity": true,
+                "isMWPAndPlaybackCapable": false,
+                "preauthRecaptcha": false,
+                "isEqualizerABEnabled": false,
+                "isPodcastEnabled": true,
+                "enableI18nLocales": true,
+                "isI18nAdditionalPagesEnabled": false,
+                "isInteractionLoggerEnabled": true,
+                "isReinventFreeEnabled": false,
+                "isEntityReportEnabled": true,
+                "isAlbumReportEnabled": false,
+                "isTrackReportEnabled": false,
+                "isPodcastShowReportEnabled": false,
+                "isPodcastEpisodeReportEnabled": false
+            }</script>
+        <script id="seo" type="application/json">
+            {
+            }</script>
+        <script id="remote-configuration" type="text/plain">
+            eyIjdiI6IjEiLCJlbmFibGVJTFJQbGF5bGlzdERXUCI6ImJvdGgtYWJvdmUiLCJlbmFibGVJMThuUm91dGVzIjoidmFyaWFudCIsImRpc2FibGVVbmF1dGhMeXJpY3NDVEEiOnRydWUsImVuYWJsZVVzZXJGcmF1ZFZlcmlmaWNhdGlvbiI6dHJ1ZSwiZW5hYmxlVXNlckZyYXVkU2lnbmFscyI6dHJ1ZSwiZW5hYmxlVmlld01vZGUiOnRydWUsIiNjb25maWd1cmF0aW9uQXNzaWdubWVudElkIjoiYTRmMDUwMDktZDBjYi1iM2I4LWM1ZTAtY2U1NDgwY2QzZmNkOjAiLCIjZ3JvdXBJZHMiOnsiZW5hYmxlSUxSUGxheWxpc3REV1AiOjEyMDE4NjMsImVuYWJsZUkxOG5Sb3V0ZXMiOjExMDI2NjEsImRpc2FibGVVbmF1dGhMeXJpY3NDVEEiOjExODY1NDEsImVuYWJsZVVzZXJGcmF1ZFZlcmlmaWNhdGlvbiI6MTA5NjY0MSwiZW5hYmxlVXNlckZyYXVkU2lnbmFscyI6MTEwOTI0MywiZW5hYmxlRkMyNEVhc3RlckVnZyI6MTEyODY2OCwiZW5hYmxlVmlld01vZGUiOjExODk3MDl9LCIjZmV0Y2hUaW1lTWlsbGlzIjoxNzMyNjMwMjgxODIyLCIjY29udGV4dEhhc2giOiIyZjA3YzFmMDhkZDZmOWY1In0=
+        </script>
+        <script src="https://open.spotifycdn.com/cdn/build/web-player/web-player.280fb2df.js"></script>
+        <script src="https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.4fe128c7.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1DB954;
+}
+
+.menu a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #1DB954;
+}
+
+.actions button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-signup {
+    background-color: #1DB954;
+    color: #000;
+}
+
+.main-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero {
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    padding: 1rem 2rem;
+    background-color: #1DB954;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.playlist {
+    margin-top: 2rem;
+}
+
+.playlist-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #282828;
+    padding: 1rem;
+    border-radius:
+}

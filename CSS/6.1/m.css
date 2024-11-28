@@ -275,3 +275,66 @@ footer p {
     outline: none;  /* Elimina el contorno cuando se hace foco en el botón */
 }
 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.social-icons img {
+    margin-right: 10px;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between icons */
+}
+
+.footer-icons img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
