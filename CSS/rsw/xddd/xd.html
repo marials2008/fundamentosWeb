@@ -1,149 +1,303 @@
-<!doctype html>
-<html lang="es">
-    <head>
-        <meta charSet="utf-8"/>
-        <title>Spotify - Reproductor web: música para todos</title>
-        <meta property="og:site_name" content="Spotify"/>
-        <meta property="fb:app_id" content="174829003346"/>
-        <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"/>
-        <link rel="icon" sizes="16x16" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png"/>
-        <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-        <meta property="og:title" content="Spotify - Reproductor web: música para todos"/>
-        <meta property="og:description" content="Spotify es un servicio de música digital que te brinda acceso a millones de canciones."/>
-        <meta property="og:url" content="https://open.spotify.com/intl-es"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content="Spotify"/>
-        <meta property="og:image" content="https://open.spotifycdn.com/cdn/images/og-image.548bc4b7.png"/>
-        <meta name="description" content="Spotify es un servicio de música digital que te brinda acceso a millones de canciones."/>
-        <meta name="google" content="notranslate"/>
-        <meta name="al:android:app_name" content="Spotify"/>
-        <meta name="al:android:package" content="com.spotify.music"/>
-        <meta name="al:android:url" content="spotify://"/>
-        <meta name="al:ios:app_name" content="Spotify"/>
-        <meta name="al:ios:app_store_id" content="324684580"/>
-        <meta name="al:ios:url" content="spotify://"/>
-        <meta name="twitter:site" content="@spotify"/>
-        <meta name="twitter:title" content="Spotify - Reproductor web: música para todos"/>
-        <meta name="twitter:description" content="Spotify es un servicio de música digital que te brinda acceso a millones de canciones."/>
-        <meta name="twitter:image" content="https://open.spotifycdn.com/cdn/images/og-image.548bc4b7.png"/>
-        <meta name="twitter:card" content="summary"/>
-        <link rel="canonical" href="https://open.spotify.com/intl-es"/>
-        <link rel="alternate" href="https://open.spotify.com" hrefLang="x-default"/>
-        <link rel="alternate" href="https://open.spotify.com" hrefLang="en"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-id" hrefLang="id"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-de" hrefLang="de"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-pt" hrefLang="pt"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-ja" hrefLang="ja"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-fr" hrefLang="fr"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-ar" hrefLang="ar"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-es" hrefLang="es"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-tr" hrefLang="tr"/>
-        <link rel="alternate" href="https://open.spotify.com/intl-it" hrefLang="it"/>
-        <link rel="alternate" href="android-app://com.spotify.music/"/>
-        <link rel="manifest" href="https://open.spotifycdn.com/cdn/generated/manifest-web-player.1609946b.json"/>
-        <style data-styled="active"></style>
-        <link rel="stylesheet" href="https://open.spotifycdn.com/cdn/build/web-player/web-player.10d8439a.css"/>
-        <link rel="preconnect" href="https://apresolve.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://clienttoken.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://api-partner.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://spclient.wg.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://api.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://daily-mix.scdn.co" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://exp.wg.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://i.scdn.co" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://lineup-images.scdn.co" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://mosaic.scdn.co" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://open.spotifycdn.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://open-exp.spotifycdn.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://pixel-static.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://pixel.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://pl.scdn.co" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://gue1-dealer.spotify.com" crossorigin="anonymous"/>
-        <link rel="preconnect" href="https://gue1-spclient.spotify.com" crossorigin="anonymous"/>
-        <link rel="preload" href="https://open.spotifycdn.com/cdn/generated-locales/web-player/es-419.ff139beb.json" data-translations-url-for-locale="es-419" as="fetch" crossorigin="anonymous" type="application/json"/>
-        <style>
-            .grecaptcha-badge {
-                display: none !important;
-            }
-        </style>
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39" async="" defer=""></script>
-        <link rel="search" type="application/opensearchdescription+xml" title="Spotify" href="https://open.spotifycdn.com/cdn/generated/opensearch.4cd8879e.xml"/>
-        <script defer="" src="https://www.googleoptimize.com/optimize.js?id=GTM-W53X654"></script>
-        <script defer="" src="https://open.spotifycdn.com/cdn/js/gtm.ea4c34bc.js"></script>
-        <script defer="" src="https://open.spotifycdn.com/cdn/js/retargeting-pixels.5ab9cdc0.js"></script>
-    </head>
-    <body class="encore-dark-theme encore-layout-themes">
-        <div class="body-drag-top"></div>
-        <script id="config" data-testid="config" type="application/json">
-            {
-                "appName": "web_player_prototype",
-                "market": "CL",
-                "locale": {
-                    "locale": "es-419",
-                    "rtl": false,
-                    "textDirection": "ltr"
-                },
-                "isPremium": false,
-                "correlationId": "96b34a3ce38dc2e5e042db4ef210e4e0",
-                "isAnonymous": true,
-                "gtmId": "GTM-PZHN3VD",
-                "optimizeId": "GTM-W53X654",
-                "pipResources": {
-                    "scripts": [
-                        "https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.4fe128c7.js",
-                        "https://open.spotifycdn.com/cdn/build/web-player/pip-mini-player.78289b5e.js"
-                    ],
-                    "styles": [
-                        "https://open.spotifycdn.com/cdn/build/web-player/pip-mini-player.db269d42.css"
-                    ]
-                },
-                "retargetingPixels": null,
-                "recaptchaWebPlayerFraudSiteKey": "6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39"
-            }</script>
-        <script id="session" data-testid="session" type="application/json">
-            {
-                "accessToken": "BQCYgEA6juUXor1wyt5e9-ScWVqL-ddJwjauP_wAavujqSMXfIRlQE-EaqYfuFHY89Y5a7nLbqVipR4RfAtwWj99lC2vWPsBTk4gGjUKI0h1_Y54dzk",
-                "accessTokenExpirationTimestampMs": 1732633570071,
-                "isAnonymous": true,
-                "clientId": "d8a5ed958d274c2e8ee717e6a4b0971d"
-            }</script>
-        <script id="features" type="application/json">
-            {
-                "enableShows": true,
-                "isTracingEnabled": false,
-                "upgradeButton": "control",
-                "mwp": false,
-                "isMWPErrorCodeEnabled": false,
-                "isMwpRadioEntity": true,
-                "isMWPAndPlaybackCapable": false,
-                "preauthRecaptcha": false,
-                "isEqualizerABEnabled": false,
-                "isPodcastEnabled": true,
-                "enableI18nLocales": true,
-                "isI18nAdditionalPagesEnabled": false,
-                "isInteractionLoggerEnabled": true,
-                "isReinventFreeEnabled": false,
-                "isEntityReportEnabled": true,
-                "isAlbumReportEnabled": false,
-                "isTrackReportEnabled": false,
-                "isPodcastShowReportEnabled": false,
-                "isPodcastEpisodeReportEnabled": false
-            }</script>
-        <script id="seo" type="application/json">
-            {
-            }</script>
-        <script id="remote-configuration" type="text/plain">
-            eyIjdiI6IjEiLCJlbmFibGVJTFJQbGF5bGlzdERXUCI6ImJvdGgtYWJvdmUiLCJlbmFibGVJMThuUm91dGVzIjoidmFyaWFudCIsImRpc2FibGVVbmF1dGhMeXJpY3NDVEEiOnRydWUsImVuYWJsZVVzZXJGcmF1ZFZlcmlmaWNhdGlvbiI6dHJ1ZSwiZW5hYmxlVXNlckZyYXVkU2lnbmFscyI6dHJ1ZSwiZW5hYmxlVmlld01vZGUiOnRydWUsIiNjb25maWd1cmF0aW9uQXNzaWdubWVudElkIjoiYTRmMDUwMDktZDBjYi1iM2I4LWM1ZTAtY2U1NDgwY2QzZmNkOjAiLCIjZ3JvdXBJZHMiOnsiZW5hYmxlSUxSUGxheWxpc3REV1AiOjEyMDE4NjMsImVuYWJsZUkxOG5Sb3V0ZXMiOjExMDI2NjEsImRpc2FibGVVbmF1dGhMeXJpY3NDVEEiOjExODY1NDEsImVuYWJsZVVzZXJGcmF1ZFZlcmlmaWNhdGlvbiI6MTA5NjY0MSwiZW5hYmxlVXNlckZyYXVkU2lnbmFscyI6MTEwOTI0MywiZW5hYmxlRkMyNEVhc3RlckVnZyI6MTEyODY2OCwiZW5hYmxlVmlld01vZGUiOjExODk3MDl9LCIjZmV0Y2hUaW1lTWlsbGlzIjoxNzMyNjMwMjgxODIyLCIjY29udGV4dEhhc2giOiIyZjA3YzFmMDhkZDZmOWY1In0=
-        </script>
-        <script src="https://open.spotifycdn.com/cdn/build/web-player/web-player.280fb2df.js"></script>
-        <script src="https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.4fe128c7.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <link rel="stylesheet" href="xd.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Buscar</a></li>
+                    <li><a href="#">Tu Biblioteca</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="¿Qué quieres reproducir?" class="search-bar">
+        </div>>
+            </header>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i><!-- Home -->
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i><!-- search option -->
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option ">
+                        <i class="fa-solid fa-list"></i><!-- libarary -->
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i> <!-- plus symbole -->
+                        <i class="fa-solid fa-arrow-left fa-flip-horizontal"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box"><!-- slidebar first box -->
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box"><!-- slidebar second box -->
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main contain started  -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-angle-left"></i> <!-- left aeroow -->
+                    <i class="fa-solid fa-angle-left fa-flip-horizontal hide"></i> <!-- right aeroow -->
+                </div>
+                <div class="sticky-nav-option">
+                    <button class="badge nav-items hide">Explore Premium</button>
+                    <button class="badge nav-items dark-badge"><i class="fa-regular fa-circle-down"
+                            style="margin-right:5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-items"></i> <!-- user icon  -->
+                </div>
+            </div>
+            <div class="header">
+                <h1>Good Morning!</h1>
+            </div>
+            <section class="upper-content">
+                <div class="box1">
+                    <img src="./assets/90s.jpeg" alt="Playlist 1">
+                    <p>90's Song</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/chill mix.jpeg" alt="Playlist 2">
+                    <p>Chill Mix</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/hothit.jpeg" alt="Recommended Albums">
+                    <p>Hot Hit</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+            </section>
+            <section class="lower-content">
+                <div class="box1">
+                    <img src="./assets/krishna.jpeg" alt="Top Artists">
+                    <p>KR$NA</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/post_melon.jpeg" alt="New Releases">
+                    <p>Post Malone</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+                <div class="box1">
+                    <img src="./assets/shubh.jpeg" alt="Featured Podcasts">
+                    <p>Shubh</p>
+                    <i class="fa-sharp fa-solid fa-circle-play" style="color: #1ed760;"></i>
+                </div>
+            </section>
+
+    <br>
+            <h2>Made For AVINASH PATEL </h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/img1.jpg" alt="" class="card-img">
+                    <p class="card-title">Daily Mix 1</p>
+                    <p class="card-info">Lomepal, Damso, RK and more...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img2.jpg" alt="" class="card-img">
+                    <p class="card-title">Pritam</p>
+                    <p class="card-info">Pritam, Papon, Amrita Singh and more...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img3.jpg" alt="" class="card-img">
+                    <p class="card-title">Ritviz</p>
+                    <p class="card-info">This Is Ritviz - playlist by Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/post_melon.jpeg" alt="" class="card-img">
+                    <p class="card-title">Post Malone</p>
+                    <p class="card-info">Post Malone Greatest Hits - Best Songs...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img4.jpg" alt="" class="card-img">
+                    <p class="card-title">Aditya Gadhvi</p>
+                    <p class="card-info">Aditya Gadhvi best audio songs </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img5.jpg" alt="" class="card-img">
+                    <p class="card-title">hot hit panjabi</p>
+                    <p class="card-info">Catch the hottest Punjabi ...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img6.jpg" alt="" class="card-img">
+                    <p class="card-title">Workout</p>
+                    <p class="card-info">Workout - playlist by Spotify</p>
+                </div>
+            </div>
+            <h2>Recommended for today</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/recomnded/img1.jpg" alt="" class="card-img">
+                    <p class="card-title">Halka Halka</p>
+                    <p class="card-info"> Single by Sunidhi Chauhan</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img2.jpg" alt="" class="card-img">
+                    <p class="card-title">Mahahetvali </p>
+                    <p class="card-info">Mahahetvali - Single by Aditya Gadhvi </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img3.jpg" alt="" class="card-img">
+                    <p class="card-title">Malang Sajna</p>
+                    <p class="card-info">Malang Sajna - Single by Sachet Tandon</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img4.jpg" alt="" class="card-img">
+                    <p class="card-title">Tum Prem Ho</p>
+                    <p class="card-info">lyrics by Mohit gitLalwani</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img5.jpg" alt="" class="card-img">
+                    <p class="card-title">Moti Veraana </p>
+                    <p class="card-info">Aditya Gadhvi best audio songs </p>
+                </div>
+                <div class="card">
+                    <img src="./assets//recomnded/img6.jpg" alt="" class="card-img">
+                    <p class="card-title">Love Ni Bhavai </p>
+                    <p class="card-info">Sachin-jigar,Niren bhatt</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img7.jpg" alt="" class="card-img">
+                    <p class="card-title">Tari Madh Mithi </p>
+                    <p class="card-info">jigardhan gadhavi</p>
+                </div>
+                <br><br>
+            </div>
+            <h2>Based on your recent listening </h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/recomnded1/img1.jpg" alt="" class="card-img">
+                    <p class="card-title">Filmy Hangover</p>
+                    <p class="card-info">soothe your hangover with these chill track</p>
+                </div>
+                <div class="card">
+                    <img src="./assets//recomnded1/img2.jpg" alt="" class="card-img">
+                    <p class="card-title">Amitabh Bhat..</p>
+                    <p class="card-info">the essential tracks panned down</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded1/img3.jpg" alt="" class="card-img">
+                    <p class="card-title">Starring Ali...</p>
+                    <p class="card-info">essential tracks of alia bhatt all in one </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded1/img4.jpg" alt="" class="card-img">
+                    <p class="card-title">Winter of Love</p>
+                    <p class="card-info">get nosy and snuggle with thse hindi...</p>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h2>Communities</h2>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-instagram "></i>
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter "></i>   
+                    </div>
+                </div>
+            </div>
+        <div class="footer">
+            <div class="line"></div>
+            </div>
+        <ul class="legal-list">
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">About Ads</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <p class="copyright">© 2023 Spotify AB</p>
+            <br><br>
+        </ul>
+        <br><br><br><br>
+        </div>
+    </div>
+    <div class="music-player">
+        <div class="album">
+            <img src="./assets/album.jpg" alt="Image Description" width="50" height="50">
+            <div class="name">
+            <p class="firstword">Jeet Jayenge Hum</p>
+            <span><img src="./assets/heart-line.png" alt="" class="heart"></span>
+            <p class="secondword" >Mohit Chauhan</p>
+            </div>
+        </div>
+        <div class="player">
+            <div class="player-controls">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step "></i>
+                <i class="fa-regular fa-circle-play" style="font-size: 2rem; margin-top: -17px;"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="playback-bar">
+                <span class="curr-time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar">
+                <span class="tot-time">03:17</span>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="./assets/controls1.png" alt="" style="height: 20px; width: 20px;">
+            <img src="./assets/controls2.png" alt="" style="height: 20px; width: 20px;">
+            <img src="./assets/controls3.png" alt="" style="height: 20px; width: 20px;" >
+            <img src="./assets/controls4.png" alt="" style="height: 20px; width: 20px;">
+            <img src="./assets/controls5.png" alt="" style="height: 20px; width: 20px;">
+            <input type="range" min="0" max="100" value="0" class="progress-bar1">
+            <img src="./assets/controls6.png" alt="" style="height: 20px; width: 20px;">
+        </div>
+    </div>
+    </div>
+    <!-- <script src="xd.js"></script> -->
+</body>
+
 </html>
