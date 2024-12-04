@@ -13,6 +13,11 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+.circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 
 .library {
     background-color: #121212; /* Fondo oscuro */
